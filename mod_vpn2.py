@@ -16,8 +16,8 @@ file_list_1='NCH_list_1'
 
 pwd = os.path.dirname(os.path.realpath( __file__ ))
 
-# vpn_folder=pwd+"/CHEAP_VPN/"
-vpn_folder=pwd+"/N0RD/WORKING_CONFIG/"
+vpn_folder=pwd+"/CHEAP_VPN/"
+# vpn_folder=pwd+"/N0RD/WORKING_CONFIG/"
 all_vpn_config_file=os.listdir(vpn_folder)
 
 

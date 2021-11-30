@@ -50,6 +50,7 @@ def check():
 
 def start():
 	iid=id_generator()
+	print(iid)
 	os.system("sh -c './honeygain -tou-accept -email y0shimitsugh0st84@gmail.com -pass testpassw0rd -device DEVICE_PNV_TEST0"+iid+"' 2>&1 | tee log.txt &")
 	time.sleep(5)
 	print("ok")

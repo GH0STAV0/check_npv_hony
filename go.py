@@ -25,7 +25,7 @@ def check():
 
 
 def start():
-	os.system("sh -c './honeygain -tou-accept -email y0shimitsugh0st84@gmail.com -pass testpassw0rd -device DEVICE_PNV_SYD' 2>&1 | tee log.txt &")
+	os.system("sh -c './honeygain -tou-accept -email y0shimitsugh0st84@gmail.com -pass testpassw0rd -device DEVICE_PNV_TEST0' 2>&1 | tee log.txt &")
 	time.sleep(5)
 	print("ok")
 	check()

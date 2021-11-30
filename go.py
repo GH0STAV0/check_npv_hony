@@ -15,6 +15,7 @@ def check():
 			print(mod_vpn2.arry_1)
 		if "Honeygain service is starting" in lines:
 			time.sleep(15)
+			pass
 		if "Honeygain service is connected and running" in lines:
 			print("ok ok ok ok o k o k o k")
 			save_succed(mod_vpn2.arry_1[0])

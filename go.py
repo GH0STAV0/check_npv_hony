@@ -16,7 +16,7 @@ def check():
 		if "Honeygain service is connected and running" in lines:
 			print("ok ok ok ok o k o k o k")
 			save_succed(mod_vpn2.arry_1[0])
-	os.system("pkill openvpn && pkill honeygain && rm log.txt")
+	os.system("pkill openvpn && pkill honeygain && rm log.txt ipifo.json")
 
 
 

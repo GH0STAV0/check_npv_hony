@@ -10,7 +10,7 @@ def check():
 	for lines in data_file:
 		if "API Error: Network Unusable" in lines :
 			print("FuCkkkk !!!!!!!")
-			print(mod_vpn2.random_vpn)
+			print(mod_vpn2.arry_1)
 		if "Honeygain service is connected and running" in lines:
 			print("ok ok ok ok o k o k o k")
 

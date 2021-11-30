@@ -77,11 +77,12 @@ def get_random_vpn():
 
 ##############################################################
 
-
+arry_1=[]
 
 def fnc_vpn():
 
 	final_vpn,random_vpn=get_random_vpn()
+	arry_1.append(random_vpn)
 	print("###################################################")
 	print("KILLING OPENVPN ....",end=' ')
 	os.system("ps aux | grep -i openvpn | awk '{print $2}'|xargs kill -9 > /dev/null 2>&1")

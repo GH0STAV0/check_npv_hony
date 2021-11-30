@@ -13,6 +13,7 @@ def check():
 			print(mod_vpn2.arry_1)
 		if "Honeygain service is connected and running" in lines:
 			print("ok ok ok ok o k o k o k")
+	os.system("pkill openvpn && pkill honeygain")
 
 
 

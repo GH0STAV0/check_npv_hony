@@ -2,7 +2,9 @@ import os ,time
 import mod_vpn2
 mod_vpn2.fnc_vpn ()
 
-
+def save_succed(logg):
+	with open("succed_nord",'a') as fw:
+		fw.write(logg+"\n")
 
 def check():
 	with open("log.txt") as fil:
@@ -13,7 +15,8 @@ def check():
 			print(mod_vpn2.arry_1)
 		if "Honeygain service is connected and running" in lines:
 			print("ok ok ok ok o k o k o k")
-	os.system("pkill openvpn && pkill honeygain")
+			save_succed(mod_vpn2.arry_1[0])
+	os.system("pkill openvpn && pkill honeygain && rm log.txt")
 
 
 

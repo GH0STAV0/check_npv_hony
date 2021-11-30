@@ -1,5 +1,20 @@
 import os ,time
 import mod_vpn2
+
+import string
+import random
+
+
+
+
+
+def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
+
+	return ''.join(random.choice(chars) for _ in range(size))
+
+
+
+
 mod_vpn2.fnc_vpn ()
 
 def save_succed(logg):
@@ -34,7 +49,8 @@ def check():
 
 
 def start():
-	os.system("sh -c './honeygain -tou-accept -email y0shimitsugh0st84@gmail.com -pass testpassw0rd -device DEVICE_PNV_TEST0' 2>&1 | tee log.txt &")
+	iid=id_generator()
+	os.system("sh -c './honeygain -tou-accept -email y0shimitsugh0st84@gmail.com -pass testpassw0rd -device DEVICE_PNV_TEST0"+iid+"' 2>&1 | tee log.txt &")
 	time.sleep(5)
 	print("ok")
 	check()
